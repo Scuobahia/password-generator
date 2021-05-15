@@ -17,7 +17,33 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
  rgba(0, 0, 0, 0.22) 0px 10px 10px;
 
 }
-
+/* Results Button */
+.results {
+    background-color: #ffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 12 px 10px;
+    height: 50px;
+    width: 70%;
+}
+.resulsts #result {
+    word-wrap: break-word;
+    max-width: calc(100% - 40px);
+}
+.results .btn {
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    width: 40px;
+    
+}
+/* Results Button Styles ends */
 h2 {
     font-family: monospace;
     font-size: 5vh;
@@ -29,7 +55,7 @@ h2 {
     font-weight: lighter;
     font-size: 3vh;
 }
-/* Generate button */
+/* Generate button style*/
 .button {
     display: flex;
     flex-wrap: wrap;
@@ -72,4 +98,4 @@ h2 {
       }
       
       
-      
+      /* Generate Button Style ends */
