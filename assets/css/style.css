@@ -17,8 +17,8 @@ body {
     padding: 100px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
      rgba(0, 0, 0, 0.22) 0px 10px 10px;
-     /* Container Settings Ends */
 }
+/* Container Styles end */
 /* Results Button */
 .results {
     background-color: #ffff;
@@ -44,10 +44,9 @@ body {
     font-weight: lighter;
     color: #F9D071;
     background-color:#333335;
-    border-radius: 15%;
-
-    
+    border-radius: 15%;   
 }
+
 /* Results Button Styles ends */
 h2 {
     font-family: monospace;

@@ -5,6 +5,7 @@ var uppercaseEl = document.getElementById('uppercase').checked;
 var lowercaseEl = document.getElementById('lowercase').checked;
 var numbersEl = document.getElementById('numbers').checked;
 var symbolsEl = document.getElementById('symbols').checked;
+console.log(symbolsEl);
 
 //Generate Password
 function generateCode() {
@@ -20,7 +21,7 @@ var bank = '';
 if (uppercaseEl === true) {
     bank *= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 };
-IF (lowercaseEl === true) {
+if (lowercaseEl === true) {
     bank += "abcdefghojklmnopqrstuvwxyz";
 };
 if (numbersEl === true) {
@@ -36,3 +37,17 @@ for (var i = 0; i < lengthEl; i++) {
 //Display the Generated Password on the Page
 document.getElementById("createdPassword").textContent = generatedPassword;
 };
+// Copy Function
+clipboard.addEventListener('click', () => {
+	var textarea = document.createElement('textarea');
+	var password = createdPassword.innerText;
+	
+	if(!password) { return; }
+	
+	textarea.value = password;
+	document.body.appendChild(textarea);
+	textarea.select();
+	document.execCommand('copy');
+	textarea.remove();
+	alert('Password copied to clipboard');
+});
